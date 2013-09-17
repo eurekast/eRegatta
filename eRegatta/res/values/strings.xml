@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eRegatta</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_favourites">Favourites</string>
+    <string name="title_activity_list">Regattas</string>
+    
+    <string name="regatta_name">Regatta name</string>
+    <string name="venue">Venue</string>
+    <string name="country">Country</string>
+    <string name="discipline">Discipline</string>
+    <string name="type">Type</string>
+    <string name="class1">Class</string>
+    <string name="grade">Grade</string>
+    <string name="month">Month</string>
+    
+    <string name="search">Search</string>
+    <string name="refresh">Refresh</string>
+    <string name="refreshWeather">Refresh Weather</string>
+    
+    <string name="contact_info">Contact &amp; info</string>
+    <string name="weather_forecast">Weather forecast</string>
+    <string name="date">Date</string>
+    
+    <string name="booking_com">Booking.com</string>
+    <string name="booking_info">avg. price (3*, 2 persons)</string>
+    
+    <string name="location_not_found">Sorry, weather location unavailable.</string>
+    
+    <string name="celsiumMin">Min °C</string>
+    <string name="celsiumMax">Max °C</string>
+    <string name="kt">kt</string>
+    <string name="degree">°</string>
+
+    <string-array name="discipline_array">
+        <item></item>
+        <item>Match racing</item>
+        <item>Fleet racing</item>
+        <item>Team racing</item>
+        <item>Offshore</item>
+        <item>Oceanic</item>
+        <item>Radio controlled</item>
+        <item>Windsurfing</item>
+        <item>Kiteboarding</item>
+    </string-array>
+    <string-array name="type_array">
+        <item></item>
+        <item>Open</item>
+        <item>Men</item>
+        <item>Women</item>
+        <item>Youth</item>
+        <item>Disabled</item>
+        <item>Mixed</item>
+    </string-array>
+    <string-array name="class_array">
+        <item></item>
+        <item>12 Metre</item>
+        <item>2.4 Metre</item>
+        <item>29er</item>
+        <item>29er XX</item>
+        <item>420</item>
+        <item>470</item>
+        <item>49er</item>
+        <item>49erFX</item>
+        <item>5.5 Metre</item>
+        <item>505</item>
+        <item>6 Metre</item>
+        <item>8 Metre</item>
+        <item>A-Catamaran</item>
+        <item>B14</item>
+        <item>Byte</item>
+        <item>Cadet</item>
+        <item>Class 40</item>
+        <item>Contender</item>
+        <item>Dart 18</item>
+        <item>Dragon</item>
+        <item>Emperical Handicap (Unspecified)</item>
+        <item>Enterprise</item>
+        <item>Etchells</item>
+        <item>Europe</item>
+        <item>Farr 30</item>
+        <item>Farr 40</item>
+        <item>Finn</item>
+        <item>Fireball</item>
+        <item>Flying Dutchman</item>
+        <item>Flying Fifteen</item>
+        <item>Flying Junior</item>
+        <item>Formula 16</item>
+        <item>Formula 18</item>
+        <item>Formula Experience</item>
+        <item>Formula Windsurfing</item>
+        <item>Funboard</item>
+        <item>GP14</item>
+        <item>H-Boat</item>
+        <item>Hansa 2.3</item>
+        <item>Hansa 303</item>
+        <item>Hansa Liberty</item>
+        <item>Hobie 14</item>
+        <item>Hobie 16</item>
+        <item>Hobie 17</item>
+        <item>Hobie 18</item>
+        <item>Hobie Dragoon</item>
+        <item>Hobie Tiger</item>
+        <item>Hobie Wildcat</item>
+        <item>IMA (International Maxi Association)</item>
+        <item>IMA - Maxi Fleet</item>
+        <item>IMA - Mini Maxi Fleet</item>
+        <item>IMA - Supermaxi Fleet</item>
+        <item>IMS</item>
+        <item>International 14</item>
+        <item>International One Design (IOD)</item>
+        <item>IRC </item>
+        <item>IRSA (International Radio Sailing Association)</item>
+        <item>IRSA - A Class</item>
+        <item>IRSA - Marblehead</item>
+        <item>IRSA - One Metre (IOM)</item>
+        <item>IRSA - Ten Rater</item>
+        <item>J/111</item>
+        <item>J/22</item>
+        <item>J/24</item>
+        <item>J/80</item>
+        <item>Kiteboarding (IKA)</item>
+        <item>Kona</item>
+        <item>Laser</item>
+        <item>Laser 4.7</item>
+        <item>Laser II</item>
+        <item>Laser Radial</item>
+        <item>Laser Vago</item>
+        <item>Lightning</item>
+        <item>Melges 20</item>
+        <item>Melges 24</item>
+        <item>Melges 32</item>
+        <item>Micro</item>
+        <item>Mirror</item>
+        <item>Mistral</item>
+        <item>Moth</item>
+        <item>Musto Performance Skiff</item>
+        <item>Nacra 17</item>
+        <item>Nacra Infusion</item>
+        <item>O\'pen BIC</item>
+        <item>OK Dinghy</item>
+        <item>Open 50 Monohull</item>
+        <item>Open 60 Monohull</item>
+        <item>Optimist</item>
+        <item>ORC Club</item>
+        <item>Platu 25</item>
+        <item>Raceboard</item>
+        <item>RC 44</item>
+        <item>RS 500</item>
+        <item>RS Feva </item>
+        <item>RS Tera</item>
+        <item>RS100</item>
+        <item>RS:One</item>
+        <item>RS:X</item>
+        <item>SB20</item>
+        <item>Shark</item>
+        <item>Sirena SL16</item>
+        <item>Snipe</item>
+        <item>Soling</item>
+        <item>Sonar</item>
+        <item>Soto 40</item>
+        <item>Speed Windsurfing</item>
+        <item>Splash</item>
+        <item>Star</item>
+        <item>Sunfish</item>
+        <item>Swan 45</item>
+        <item>Swan 60</item>
+        <item>Tasar</item>
+        <item>Techno 293</item>
+        <item>Tempest</item>
+        <item>Topcat K1</item>
+        <item>Topper</item>
+        <item>Tornado</item>
+        <item>TP52 </item>
+        <item>Vaurien</item>
+        <item>Viper</item>
+        <item>X-35</item>
+        <item>X-41</item>
+        <item>X99</item>
+        <item>Yngling</item>
+        <item>Zoom 8</item>
+    </string-array>
+    <string-array name="grade_array">
+        <item></item>
+        <item>1</item>
+        <item>100</item>
+        <item>2</item>
+        <item>200</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>50</item>
+        <item>C1</item>
+        <item>C2</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="countries_array">
+        <item></item>
+        <item>Afghanistan - AFG</item>
+        <item>Albania - ALB</item>
+        <item>Algeria - ALG</item>
+        <item>American Samoa - ASA</item>
+        <item>Andorra - AND</item>
+        <item>Angola - ANG</item>
+        <item>Anguilla * - ANA</item>
+        <item>Antigua - ANT</item>
+        <item>Argentina - ARG</item>
+        <item>Armenia - ARM</item>
+        <item>Aruba - ARU</item>
+        <item>Australia - AUS</item>
+        <item>Austria - AUT</item>
+        <item>Azerbaijan - AZE</item>
+        <item>Bahamas - BAH</item>
+        <item>Bahrain - BRN</item>
+        <item>Bangladesh - BAN</item>
+        <item>Barbados - BAR</item>
+        <item>Belarus - BLR</item>
+        <item>Belgium - BEL</item>
+        <item>Belize - BIZ</item>
+        <item>Benin - BEN</item>
+        <item>Bermuda - BER</item>
+        <item>Bhutan - BHU</item>
+        <item>Bolivia - BOL</item>
+        <item>Bosnia &amp; Herzegovina - BIH</item>
+        <item>Botswana - BOT</item>
+        <item>Brazil - BRA</item>
+        <item>British Virgin Islands - IVB</item>
+        <item>Brunei - BRU</item>
+        <item>Bulgaria - BUL</item>
+        <item>Burkina Faso - BUR</item>
+        <item>Burundi * - BDI</item>
+        <item>Cambodia - CAM</item>
+        <item>Cameroon - CMR</item>
+        <item>Canada - CAN</item>
+        <item>Cape Verde - CPV</item>
+        <item>Cayman Islands - CAY</item>
+        <item>Central Africa - CAF</item>
+        <item>Chad - CHA</item>
+        <item>Chile - CHI</item>
+        <item>Chinese Taipei - TPE</item>
+        <item>Colombia - COL</item>
+        <item>Comoros - COM</item>
+        <item>Congo - CGO</item>
+        <item>Cook Islands - COK</item>
+        <item>Costa Rica - CRC</item>
+        <item>Croatia - CRO</item>
+        <item>Cuba - CUB</item>
+        <item>Curacao - CUR</item>
+        <item>Cyprus - CYP</item>
+        <item>Czech Republic - CZE</item>
+        <item>Denmark - DEN</item>
+        <item>Djibouti - DJI</item>
+        <item>Dominica - DMA</item>
+        <item>Dominican Republic - DOM</item>
+        <item>Dpr Korea - PRK</item>
+        <item>Ecuador - ECU</item>
+        <item>Egypt - EGY</item>
+        <item>El Salvador - ESA</item>
+        <item>Equatorial Guinea - GEQ</item>
+        <item>Eritrea - ERI</item>
+        <item>Estonia - EST</item>
+        <item>Ethiopia - ETH</item>
+        <item>Faroe Islands - FAR</item>
+        <item>Fiji - FIJ</item>
+        <item>Finland - FIN</item>
+        <item>France - FRA</item>
+        <item>French Guiana - FGU</item>
+        <item>Micronesia - FSM</item>
+        <item>Macedonia (FYRO) - MKD</item>
+        <item>Gabon - GAB</item>
+        <item>Gambia - GAM</item>
+        <item>Georgia - GEO</item>
+        <item>Germany - GER</item>
+        <item>Ghana - GHA</item>
+        <item>Gibraltar - GIB</item>
+        <item>Great Britain - GBR</item>
+        <item>Greece - GRE</item>
+        <item>Grenada - GRN</item>
+        <item>Guadeloupe - GUD</item>
+        <item>Guam - GUM</item>
+        <item>Guatemala - GUA</item>
+        <item>Guinea - GUI</item>
+        <item>Guinea-bissau - GBS</item>
+        <item>Guyana - GUY</item>
+        <item>Haiti - HAI</item>
+        <item>Honduras - HON</item>
+        <item>Hong Kong - HKG</item>
+        <item>Hungary - HUN</item>
+        <item>I.R. Iran - IRI</item>
+        <item>Iceland - ISL</item>
+        <item>India - IND</item>
+        <item>Indonesia - INA</item>
+        <item>Iraq - IRQ</item>
+        <item>Ireland - IRL</item>
+        <item>Israel - ISR</item>
+        <item>Italy - ITA</item>
+        <item>Ivory Coast - CIV</item>
+        <item>Jamaica - JAM</item>
+        <item>Japan - JPN</item>
+        <item>Jordan - JOR</item>
+        <item>Kazakhstan - KAZ</item>
+        <item>Kenya - KEN</item>
+        <item>Kiribati - KIR</item>
+        <item>Korea - KOR</item>
+        <item>Kuwait - KUW</item>
+        <item>Kyrgyzstan - KGZ</item>
+        <item>Lao P.d.r. - LAO</item>
+        <item>Latvia - LAT</item>
+        <item>Lebanon - LIB</item>
+        <item>Lesotho - LES</item>
+        <item>Liberia - LBR</item>
+        <item>Libya - LBA</item>
+        <item>Liechtenstein - LIE</item>
+        <item>Lithuania - LTU</item>
+        <item>Luxembourg - LUX</item>
+        <item>Macau - MAC</item>
+        <item>Madagascar - MAD</item>
+        <item>Malawi - MAW</item>
+        <item>Malaysia - MAS</item>
+        <item>Maldives - MDV</item>
+        <item>Mali - MLI</item>
+        <item>Malta - MLT</item>
+        <item>Marshall Islands - MHL</item>
+        <item>Martinique - MRN</item>
+        <item>Mauritania - MTN</item>
+        <item>Mauritius - MRI</item>
+        <item>Mexico - MEX</item>
+        <item>Moldova - MDA</item>
+        <item>Monaco - MON</item>
+        <item>Mongolia - MGL</item>
+        <item>Montserrat - MNT</item>
+        <item>Morocco - MAR</item>
+        <item>Mozambique - MOZ</item>
+        <item>Myanmar - MYA</item>
+        <item>Namibia - NAM</item>
+        <item>Nauru - NRU</item>
+        <item>Nepal - NEP</item>
+        <item>Netherlands - NED</item>
+        <item>Netherlands Antilles - AHO</item>
+        <item>New Caledonia - CAL</item>
+        <item>New Zealand - NZL</item>
+        <item>Nicaragua - NCA</item>
+        <item>Niger - NIG</item>
+        <item>Nigeria - NGR</item>
+        <item>Northern Mariana Islands - NMI</item>
+        <item>Norway - NOR</item>
+        <item>Oman - OMA</item>
+        <item>Pakistan - PAK</item>
+        <item>Palau - PLW</item>
+        <item>Palestine - PLE</item>
+        <item>Panama - PAN</item>
+        <item>Papua New Guinea - PNG</item>
+        <item>Paraguay - PAR</item>
+        <item>Peru - PER</item>
+        <item>Philippines - PHI</item>
+        <item>Poland - POL</item>
+        <item>Portugal - POR</item>
+        <item>China, PR - CHN</item>
+        <item>Puerto Rico - PUR</item>
+        <item>Qatar - QAT</item>
+        <item>Reunion - REU</item>
+        <item>Romania - ROU</item>
+        <item>Russia - RUS</item>
+        <item>Rwanda - RWA</item>
+        <item>Samoa - SAM</item>
+        <item>San Marino - SMR</item>
+        <item>Sao Tome And Principe - STP</item>
+        <item>Saudi Arabia - KSA</item>
+        <item>Senegal - SEN</item>
+        <item>Serbia - SRB</item>
+        <item>Seychelles - SEY</item>
+        <item>Sierra Leone - SLE</item>
+        <item>Singapore - SIN</item>
+        <item>Slovakia - SVK</item>
+        <item>Slovenia - SLO</item>
+        <item>Solomon Islands - SOL</item>
+        <item>Somalia - SOM</item>
+        <item>South Africa - RSA</item>
+        <item>Spain - ESP</item>
+        <item>Sri Lanka - SRI</item>
+        <item>St Kitts - SKN</item>
+        <item>St Lucia - LCA</item>
+        <item>St Vincent - VIN</item>
+        <item>Sudan - SUD</item>
+        <item>Suriname - SUR</item>
+        <item>Swaziland - SWZ</item>
+        <item>Sweden - SWE</item>
+        <item>Switzerland - SUI</item>
+        <item>Syria - SYR</item>
+        <item>Tahiti - TAH</item>
+        <item>Taiwan - TAI</item>
+        <item>Tajikistan - TJK</item>
+        <item>Tanzania - TAN</item>
+        <item>Thailand - THA</item>
+        <item>Togo - TOG</item>
+        <item>Tonga - TGA</item>
+        <item>Trinidad And Tobago - TRI</item>
+        <item>Tunisia - TUN</item>
+        <item>Turkey - TUR</item>
+        <item>Turkmenistan - TKM</item>
+        <item>Turks &amp; Caicos Islands - TKS</item>
+        <item>Tuvalu - TUV</item>
+        <item>Uganda - UGA</item>
+        <item>Ukraine - UKR</item>
+        <item>United Arab Emirates - UAE</item>
+        <item>Uruguay - URU</item>
+        <item>US Virgin Islands - ISV</item>
+        <item>USA - USA</item>
+        <item>Uzbekistan - UZB</item>
+        <item>Vanuatu - VAN</item>
+        <item>Venezuela - VEN</item>
+        <item>Vietnam - VIE</item>
+        <item>Yemen - YEM</item>
+        <item>Yugoslavia - YUG</item>
+        <item>Zaire - ZAI</item>
+        <item>Zambia - ZAM</item>
+        <item>Zimbabwe - ZIM</item>
+        <item>Montenegro - MNE</item>
+        <item>To Be Confirmed - TBC</item>
+        <item>Unified Team - EUN</item>
+        <item>BURMA - BIR</item>
+        <item>BRITISH WEST INDIES - BWI</item>
+        <item>EQUIPE UNIFIÉE ALLEMANDE - EUA</item>
+        <item>Federal Republic of Germany (1950) - FRG</item>
+        <item>German Democratic Republic (1955) - GDR</item>
+        <item>RHODÉSIE - RHO</item>
+        <item>ROMANIA - ROM</item>
+        <item>CZECHOSLOVAKIA - TCH</item>
+        <item>USSR - URS</item>
+        <item>Kosovo - KOS</item>
+        <item>Independent Olympic Athlete - IOA</item>
+        <item>DR Congo - COD</item>
+        <item>Timor Leste - TLS</item>
+    </string-array>
+    <string-array name="country_tags_array">
+        <item></item>
+        <item>AFG</item>
+        <item>ALB</item>
+        <item>ALG</item>
+        <item>ASA</item>
+        <item>AND</item>
+        <item>ANG</item>
+        <item>ANA</item>
+        <item>ANT</item>
+        <item>ARG</item>
+        <item>ARM</item>
+        <item>ARU</item>
+        <item>AUS</item>
+        <item>AUT</item>
+        <item>AZE</item>
+        <item>BAH</item>
+        <item>BRN</item>
+        <item>BAN</item>
+        <item>BAR</item>
+        <item>BLR</item>
+        <item>BEL</item>
+        <item>BIZ</item>
+        <item>BEN</item>
+        <item>BER</item>
+        <item>BHU</item>
+        <item>BOL</item>
+        <item>BIH</item>
+        <item>BOT</item>
+        <item>BRA</item>
+        <item>IVB</item>
+        <item>BRU</item>
+        <item>BUL</item>
+        <item>BUR</item>
+        <item>BDI</item>
+        <item>CAM</item>
+        <item>CMR</item>
+        <item>CAN</item>
+        <item>CPV</item>
+        <item>CAY</item>
+        <item>CAF</item>
+        <item>CHA</item>
+        <item>CHI</item>
+        <item>TPE</item>
+        <item>COL</item>
+        <item>COM</item>
+        <item>CGO</item>
+        <item>COK</item>
+        <item>CRC</item>
+        <item>CRO</item>
+        <item>CUB</item>
+        <item>CUR</item>
+        <item>CYP</item>
+        <item>CZE</item>
+        <item>DEN</item>
+        <item>DJI</item>
+        <item>DMA</item>
+        <item>DOM</item>
+        <item>PRK</item>
+        <item>ECU</item>
+        <item>EGY</item>
+        <item>ESA</item>
+        <item>GEQ</item>
+        <item>ERI</item>
+        <item>EST</item>
+        <item>ETH</item>
+        <item>FAR</item>
+        <item>FIJ</item>
+        <item>FIN</item>
+        <item>FRA</item>
+        <item>FGU</item>
+        <item>FSM</item>
+        <item>MKD</item>
+        <item>GAB</item>
+        <item>GAM</item>
+        <item>GEO</item>
+        <item>GER</item>
+        <item>GHA</item>
+        <item>GIB</item>
+        <item>GBR</item>
+        <item>GRE</item>
+        <item>GRN</item>
+        <item>GUD</item>
+        <item>GUM</item>
+        <item>GUA</item>
+        <item>GUI</item>
+        <item>GBS</item>
+        <item>GUY</item>
+        <item>HAI</item>
+        <item>HON</item>
+        <item>HKG</item>
+        <item>HUN</item>
+        <item>IRI</item>
+        <item>ISL</item>
+        <item>IND</item>
+        <item>INA</item>
+        <item>IRQ</item>
+        <item>IRL</item>
+        <item>ISR</item>
+        <item>ITA</item>
+        <item>CIV</item>
+        <item>JAM</item>
+        <item>JPN</item>
+        <item>JOR</item>
+        <item>KAZ</item>
+        <item>KEN</item>
+        <item>KIR</item>
+        <item>KOR</item>
+        <item>KUW</item>
+        <item>KGZ</item>
+        <item>LAO</item>
+        <item>LAT</item>
+        <item>LIB</item>
+        <item>LES</item>
+        <item>LBR</item>
+        <item>LBA</item>
+        <item>LIE</item>
+        <item>LTU</item>
+        <item>LUX</item>
+        <item>MAC</item>
+        <item>MAD</item>
+        <item>MAW</item>
+        <item>MAS</item>
+        <item>MDV</item>
+        <item>MLI</item>
+        <item>MLT</item>
+        <item>MHL</item>
+        <item>MRN</item>
+        <item>MTN</item>
+        <item>MRI</item>
+        <item>MEX</item>
+        <item>MDA</item>
+        <item>MON</item>
+        <item>MGL</item>
+        <item>MNT</item>
+        <item>MAR</item>
+        <item>MOZ</item>
+        <item>MYA</item>
+        <item>NAM</item>
+        <item>NRU</item>
+        <item>NEP</item>
+        <item>NED</item>
+        <item>AHO</item>
+        <item>CAL</item>
+        <item>NZL</item>
+        <item>NCA</item>
+        <item>NIG</item>
+        <item>NGR</item>
+        <item>NMI</item>
+        <item>NOR</item>
+        <item>OMA</item>
+        <item>PAK</item>
+        <item>PLW</item>
+        <item>PLE</item>
+        <item>PAN</item>
+        <item>PNG</item>
+        <item>PAR</item>
+        <item>PER</item>
+        <item>PHI</item>
+        <item>POL</item>
+        <item>POR</item>
+        <item>CHN</item>
+        <item>PUR</item>
+        <item>QAT</item>
+        <item>REU</item>
+        <item>ROU</item>
+        <item>RUS</item>
+        <item>RWA</item>
+        <item>SAM</item>
+        <item>SMR</item>
+        <item>STP</item>
+        <item>KSA</item>
+        <item>SEN</item>
+        <item>SRB</item>
+        <item>SEY</item>
+        <item>SLE</item>
+        <item>SIN</item>
+        <item>SVK</item>
+        <item>SLO</item>
+        <item>SOL</item>
+        <item>SOM</item>
+        <item>RSA</item>
+        <item>ESP</item>
+        <item>SRI</item>
+        <item>SKN</item>
+        <item>LCA</item>
+        <item>VIN</item>
+        <item>SUD</item>
+        <item>SUR</item>
+        <item>SWZ</item>
+        <item>SWE</item>
+        <item>SUI</item>
+        <item>SYR</item>
+        <item>TAH</item>
+        <item>TAI</item>
+        <item>TJK</item>
+        <item>TAN</item>
+        <item>THA</item>
+        <item>TOG</item>
+        <item>TGA</item>
+        <item>TRI</item>
+        <item>TUN</item>
+        <item>TUR</item>
+        <item>TKM</item>
+        <item>TKS</item>
+        <item>TUV</item>
+        <item>UGA</item>
+        <item>UKR</item>
+        <item>UAE</item>
+        <item>URU</item>
+        <item>ISV</item>
+        <item>USA</item>
+        <item>UZB</item>
+        <item>VAN</item>
+        <item>VEN</item>
+        <item>VIE</item>
+        <item>YEM</item>
+        <item>YUG</item>
+        <item>ZAI</item>
+        <item>ZAM</item>
+        <item>ZIM</item>
+        <item>MNE</item>
+        <item>TBC</item>
+        <item>EUN</item>
+        <item>BIR</item>
+        <item>BWI</item>
+        <item>EUA</item>
+        <item>FRG</item>
+        <item>GDR</item>
+        <item>RHO</item>
+        <item>ROM</item>
+        <item>TCH</item>
+        <item>URS</item>
+        <item>KOS</item>
+        <item>IOA</item>
+        <item>COD</item>
+        <item>TLS</item>
+    </string-array>
+
+    <string name="title_activity_view">ViewActivity</string>
+
+</resources>

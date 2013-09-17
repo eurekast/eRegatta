@@ -1,0 +1,185 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://eregatta.appspot.com/_ah/api",
+  "name" : "regattaclassendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://eregatta.appspot.com/_ah/spi",
+    "deadline" : 10.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "regattaclassendpoint.getRegattaClass" : {
+      "path" : "regattaclass/{id}",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaClassEndpoint.getRegattaClass",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaclassendpoint.regattaClassEndpoint.downloadRegattaClasses" : {
+      "path" : "downloadRegattaClasses",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaClassEndpoint.downloadRegattaClasses",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaclassendpoint.insertRegattaClass" : {
+      "path" : "regattaclass",
+      "httpMethod" : "POST",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaClassEndpoint.insertRegattaClass",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaclassendpoint.updateRegattaClass" : {
+      "path" : "regattaclass",
+      "httpMethod" : "PUT",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaClassEndpoint.updateRegattaClass",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaclassendpoint.removeRegattaClass" : {
+      "path" : "regattaclass/{id}",
+      "httpMethod" : "DELETE",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaClassEndpoint.removeRegattaClass",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "RegattaClass" : {
+        "id" : "RegattaClass",
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "discipline" : {
+            "type" : "string"
+          },
+          "grade" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "regattaClass" : {
+            "type" : "string"
+          },
+          "regattaId" : {
+            "type" : "string"
+          }
+        }
+      },
+      "RegattaClassCollection" : {
+        "id" : "RegattaClassCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "RegattaClass"
+            }
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.gogi.eregatta.RegattaClassEndpoint.getRegattaClass" : {
+        "response" : {
+          "$ref" : "RegattaClass"
+        }
+      },
+      "com.gogi.eregatta.RegattaClassEndpoint.downloadRegattaClasses" : {
+        "response" : {
+          "$ref" : "RegattaClassCollection"
+        }
+      },
+      "com.gogi.eregatta.RegattaClassEndpoint.insertRegattaClass" : {
+        "request" : {
+          "$ref" : "RegattaClass"
+        },
+        "response" : {
+          "$ref" : "RegattaClass"
+        }
+      },
+      "com.gogi.eregatta.RegattaClassEndpoint.updateRegattaClass" : {
+        "request" : {
+          "$ref" : "RegattaClass"
+        },
+        "response" : {
+          "$ref" : "RegattaClass"
+        }
+      },
+      "com.gogi.eregatta.RegattaClassEndpoint.removeRegattaClass" : {
+        "response" : {
+          "$ref" : "RegattaClass"
+        }
+      }
+    }
+  }
+}

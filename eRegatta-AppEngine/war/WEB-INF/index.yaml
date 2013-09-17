@@ -1,0 +1,6 @@
+indexes:
+
+- kind: weather
+  ancestor: yes
+  properties:
+  - name: order

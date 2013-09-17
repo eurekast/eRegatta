@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <!-- <cron>
+    <url>/putregattas1</url>
+    <description>Update regattas 1/4</description>
+    <schedule>every day 19:30</schedule>
+    <timezone>Europe/Ljubljana</timezone>
+  </cron>
+  
+  <cron>
+    <url>/putregattas2</url>
+    <description>Update regattas 2/4</description>
+    <schedule>every day 19:37</schedule>
+    <timezone>Europe/Ljubljana</timezone>
+  </cron>
+  <cron>
+    <url>/putregattas3</url>
+    <description>Update regattas 3/4</description>
+    <schedule>every day 19:44</schedule>
+    <timezone>Europe/Ljubljana</timezone>
+  </cron>
+  <cron>
+    <url>/putregattas4</url>
+    <description>Update regattas 4/4</description>
+    <schedule>every day 19:51</schedule>
+    <timezone>Europe/Ljubljana</timezone>
+  </cron>
+  <cron>
+    <url>/putextras</url>
+    <description>Update regattas 4/4</description>
+    <schedule>every day 20:00</schedule>
+    <timezone>Europe/Ljubljana</timezone>
+  </cron>-->
+</cronentries>

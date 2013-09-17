@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    	<TextView
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/regatta_name_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/>
+    	
+    	<FrameLayout
+        android:padding="16dp"
+        android:id="@+id/star_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/>    	
+	</LinearLayout>
+	
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#31B6E7"/>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/section_padding" >
+    
+	    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    	
+		    <TextView
+		    android:paddingTop="@dimen/regatta_details_padding_height"
+		    android:paddingRight="@dimen/regatta_details_padding_between"
+		    android:textSize="16sp"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		    android:text="@string/venue"/>
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:textColor="#FFFFFF"
+		    android:id="@+id/venue_textview"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:layout_marginBottom="4dp"/>
+		    
+		</LinearLayout>
+	    
+	    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:paddingTop="@dimen/regatta_details_padding_height"
+		    android:paddingRight="@dimen/regatta_details_padding_between"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		    android:text="@string/date"/>
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:textColor="#FFFFFF"
+		    android:id="@+id/date_textview"
+		 	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content"
+		  	android:layout_marginBottom="4dp"/>
+		    
+		</LinearLayout>
+		
+      	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/discipline_layout">
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:paddingTop="@dimen/regatta_details_padding_height"
+		    android:paddingRight="@dimen/regatta_details_padding_between"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		    android:text="@string/discipline"/>
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:textColor="#FFFFFF"
+		    android:id="@+id/discipline_textview"
+		 	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content"
+		  	android:layout_marginBottom="4dp"/>
+		    
+		</LinearLayout>
+		
+      	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/type_layout">
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:paddingTop="@dimen/regatta_details_padding_height"
+		    android:paddingRight="@dimen/regatta_details_padding_between"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		    android:text="@string/type"
+		    android:layout_marginBottom="4dp"/>
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:textColor="#FFFFFF"
+		    android:id="@+id/type_textview"
+		 	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content"
+		  	android:layout_marginBottom="4dp"/>
+		    
+		</LinearLayout>
+		
+      	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/grade_layout">
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:paddingTop="@dimen/regatta_details_padding_height"
+		    android:paddingRight="@dimen/regatta_details_padding_between"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		    android:text="@string/grade"/>
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:textColor="#FFFFFF"
+		    android:id="@+id/grade_textview"
+		 	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content"
+		  	android:layout_marginBottom="4dp"/>
+		    
+		</LinearLayout>
+		
+		<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/class_layout">
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:paddingTop="@dimen/regatta_details_padding_height"
+		    android:paddingRight="@dimen/regatta_details_padding_between"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		    android:text="@string/class1"/>
+		    
+		    <TextView
+		    android:textSize="16sp"
+		    android:textColor="#FFFFFF"
+		    android:id="@+id/class_textview"
+		 	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content"
+		  	android:layout_marginBottom="4dp"/>
+		    
+		</LinearLayout>
+		
+		<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:id="@+id/booking_layout">
+		    
+		    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    
+			    <TextView 
+		    	android:textSize="16sp"
+		        android:paddingTop="@dimen/regatta_details_padding_height"
+		        android:paddingRight="@dimen/regatta_details_padding_between"
+			    android:text="@string/booking_com"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+			    
+			    <TextView 
+		        android:paddingTop="@dimen/regatta_details_padding_height"
+			    android:text="@string/booking_info"
+			    android:textStyle="italic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+			   
+			</LinearLayout>
+			    
+		    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+	        android:paddingTop="@dimen/regatta_details_padding_height"
+		    android:paddingLeft="@dimen/regatta_details_padding_between">
+		    
+			    <FrameLayout 
+		    	android:paddingRight="@dimen/regatta_details_padding_between"
+		        android:id="@+id/booking_price_container"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+			    
+			    <FrameLayout 
+		        android:id="@+id/booking_more_container"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+		    
+	    	</LinearLayout>
+		
+		    
+		</LinearLayout>
+		
+		<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+		    
+	      	<TextView
+		    android:textSize="16sp"
+		    android:paddingTop="@dimen/regatta_details_padding_height"
+		 	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		    android:text="@string/contact_info"/>
+		    
+		    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    
+		    	<FrameLayout 
+		    	android:padding="@dimen/regatta_details_padding_between"
+		        android:id="@+id/web_icon_container"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"/>
+		    	
+		    	<FrameLayout 
+		    	android:padding="@dimen/regatta_details_padding_between"
+		        android:id="@+id/phone_icon_container"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"/>
+		    	
+		    	<FrameLayout 
+		    	android:padding="@dimen/regatta_details_padding_between"
+		        android:id="@+id/mail_icon_container"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"/>
+		    	
+		    	<FrameLayout 
+		    	android:padding="@dimen/regatta_details_padding_between"
+		        android:id="@+id/map_icon_container"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"/>
+		    
+	    	</LinearLayout>
+	    	
+    	</LinearLayout>
+	    
+    </LinearLayout>
+     
+    <TextView
+    android:padding="16dp"
+    android:textSize="16sp"
+    android:id="@+id/weather_forecast_textview"
+ 	android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+    android:text="@string/weather_forecast"/>
+    
+  	<GridView
+    android:id="@+id/daily_weather_gridview"
+	android:layout_width="fill_parent" 
+	android:layout_height="220dp"
+	android:numColumns="6"
+	android:verticalSpacing="0dp"
+	android:horizontalSpacing="0dp"
+	android:stretchMode="columnWidth"
+	android:gravity="center"
+	android:visibility="gone"/>
+     
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        
+        <LinearLayout 
+	   	android:padding="@dimen/regatta_details_padding_between"
+       	android:id="@+id/weather_notification_container"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:visibility="gone">
+		    
+		    <TextView
+		    android:padding="16dp"
+		    android:textSize="16sp"
+		    android:id="@+id/weather_notification_textview"
+		 	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content"/>
+		    
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+	   	android:padding="@dimen/regatta_details_padding_between"
+       	android:id="@+id/refresh_weather_button_container"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:visibility="visible">
+		    
+		    <Button
+		    android:id="@+id/weather_refresh_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/refreshWeather"/>
+		    
+        </LinearLayout>
+       
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,211 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://eregatta.appspot.com/_ah/api",
+  "name" : "regattaendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://eregatta.appspot.com/_ah/spi",
+    "deadline" : 10.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "regattaendpoint.removeRegatta" : {
+      "path" : "regatta/{id}",
+      "httpMethod" : "DELETE",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaEndpoint.removeRegatta",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaendpoint.insertRegatta" : {
+      "path" : "regatta",
+      "httpMethod" : "POST",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaEndpoint.insertRegatta",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaendpoint.updateRegatta" : {
+      "path" : "regatta",
+      "httpMethod" : "PUT",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaEndpoint.updateRegatta",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaendpoint.getRegatta" : {
+      "path" : "regatta/{id}",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaEndpoint.getRegatta",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "regattaendpoint.regattaEndpoint.downloadRegattas" : {
+      "path" : "downloadRegattas",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.RegattaEndpoint.downloadRegattas",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Regatta" : {
+        "id" : "Regatta",
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "country" : {
+            "type" : "string"
+          },
+          "startDate" : {
+            "type" : "string"
+          },
+          "endDate" : {
+            "type" : "string"
+          },
+          "entryAddress" : {
+            "type" : "string"
+          },
+          "venue" : {
+            "type" : "string"
+          },
+          "email" : {
+            "type" : "string"
+          },
+          "entryName" : {
+            "type" : "string"
+          },
+          "fax" : {
+            "type" : "string"
+          },
+          "telephone" : {
+            "type" : "string"
+          },
+          "website" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "float"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        }
+      },
+      "RegattaCollection" : {
+        "id" : "RegattaCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Regatta"
+            }
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.gogi.eregatta.RegattaEndpoint.removeRegatta" : {
+        "response" : {
+          "$ref" : "Regatta"
+        }
+      },
+      "com.gogi.eregatta.RegattaEndpoint.insertRegatta" : {
+        "request" : {
+          "$ref" : "Regatta"
+        },
+        "response" : {
+          "$ref" : "Regatta"
+        }
+      },
+      "com.gogi.eregatta.RegattaEndpoint.updateRegatta" : {
+        "request" : {
+          "$ref" : "Regatta"
+        },
+        "response" : {
+          "$ref" : "Regatta"
+        }
+      },
+      "com.gogi.eregatta.RegattaEndpoint.getRegatta" : {
+        "response" : {
+          "$ref" : "Regatta"
+        }
+      },
+      "com.gogi.eregatta.RegattaEndpoint.downloadRegattas" : {
+        "response" : {
+          "$ref" : "RegattaCollection"
+        }
+      }
+    }
+  }
+}

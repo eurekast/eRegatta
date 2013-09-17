@@ -1,0 +1,176 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://eregatta.appspot.com/_ah/api",
+  "name" : "bookingendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://eregatta.appspot.com/_ah/spi",
+    "deadline" : 10.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "bookingendpoint.bookingEndpoint.downloadBookings" : {
+      "path" : "downloadBookings",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.BookingEndpoint.downloadBookings",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "bookingendpoint.insertBooking" : {
+      "path" : "booking",
+      "httpMethod" : "POST",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.BookingEndpoint.insertBooking",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "bookingendpoint.updateBooking" : {
+      "path" : "booking",
+      "httpMethod" : "PUT",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.BookingEndpoint.updateBooking",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "bookingendpoint.removeBooking" : {
+      "path" : "booking/{id}",
+      "httpMethod" : "DELETE",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.BookingEndpoint.removeBooking",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "bookingendpoint.getBooking" : {
+      "path" : "booking/{id}",
+      "httpMethod" : "GET",
+      "scopes" : [ ],
+      "audiences" : [ ],
+      "clientIds" : [ ],
+      "rosyMethod" : "com.gogi.eregatta.BookingEndpoint.getBooking",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Booking" : {
+        "id" : "Booking",
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "price" : {
+            "type" : "string"
+          },
+          "url" : {
+            "type" : "string"
+          }
+        }
+      },
+      "BookingCollection" : {
+        "id" : "BookingCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Booking"
+            }
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.gogi.eregatta.BookingEndpoint.downloadBookings" : {
+        "response" : {
+          "$ref" : "BookingCollection"
+        }
+      },
+      "com.gogi.eregatta.BookingEndpoint.insertBooking" : {
+        "request" : {
+          "$ref" : "Booking"
+        },
+        "response" : {
+          "$ref" : "Booking"
+        }
+      },
+      "com.gogi.eregatta.BookingEndpoint.updateBooking" : {
+        "request" : {
+          "$ref" : "Booking"
+        },
+        "response" : {
+          "$ref" : "Booking"
+        }
+      },
+      "com.gogi.eregatta.BookingEndpoint.removeBooking" : {
+        "response" : {
+          "$ref" : "Booking"
+        }
+      },
+      "com.gogi.eregatta.BookingEndpoint.getBooking" : {
+        "response" : {
+          "$ref" : "Booking"
+        }
+      }
+    }
+  }
+}

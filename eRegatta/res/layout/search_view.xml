@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="16dp"
+	android:paddingRight="16dp"
+	android:orientation="vertical"
+	android:id="@+id/search_layout"
+	android:textColor="#FFFFFF"
+	android:theme="@style/AppTheme"
+	android:focusable="true"
+	android:focusableInTouchMode="true">
+	    
+	    <EditText
+	    android:id="@+id/search_name"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="@string/regatta_name"
+	    android:inputType="text" />
+	    
+	    <EditText
+	    android:id="@+id/search_venue"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="@string/venue"
+	    android:inputType="text" />
+	    
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	        <TextView
+	        android:layout_width="@dimen/search_labels"
+	        android:layout_height="wrap_content"
+	        android:text="@string/country" />
+	        
+		    <Spinner
+		    android:id="@+id/search_country"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"/>
+		    
+		</LinearLayout>
+	    
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	        <TextView
+	        android:layout_width="@dimen/search_labels"
+	        android:layout_height="wrap_content"
+	        android:text="@string/discipline" />
+	        
+		    <Spinner
+		    android:id="@+id/search_discipline"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+		   
+		</LinearLayout>
+	    
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	        <TextView
+	        android:layout_width="@dimen/search_labels"
+	        android:layout_height="wrap_content"
+	        android:text="@string/type" />
+	        
+		    <Spinner
+		    android:id="@+id/search_type"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	        <TextView
+	        android:layout_width="@dimen/search_labels"
+	        android:layout_height="wrap_content"
+	        android:text="@string/class1" />
+	        
+		    <Spinner
+		    android:id="@+id/search_class"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+		
+		</LinearLayout>
+		
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	        <TextView
+	        android:layout_width="@dimen/search_labels"
+	        android:layout_height="wrap_content"
+	        android:text="@string/grade" />   
+	        
+		    <Spinner
+		    android:id="@+id/search_grade"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+	    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	        <TextView
+	        android:layout_width="@dimen/search_labels"
+	        android:layout_height="wrap_content"
+	        android:text="@string/month" />   
+	           
+		    <Spinner
+		    android:id="@+id/search_month"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+	    
+	    </LinearLayout>
+		    
+	    <Button
+	    android:id="@+id/search_button"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/search"/>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top"
+	        android:orientation="horizontal" >
+		    
+		    <Button
+		    android:id="@+id/refreshRegattas_button"
+		    android:layout_width="100dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/refresh"/>
+		    
+		    <TextView
+		    android:id="@+id/refreshTime_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:lines="2"
+		    android:layout_gravity="center_vertical"
+		    android:layout_marginLeft="10dp"/>
+	        
+	    </LinearLayout>
+	    
+	</LinearLayout>

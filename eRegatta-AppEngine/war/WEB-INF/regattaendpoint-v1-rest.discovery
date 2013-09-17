@@ -1,0 +1,207 @@
+{
+ "kind": "discovery#restDescription",
+ "etag": "\"s1omim4x8ymp9_6H8kBMkfEDqpo/4VuiRbwc7urNjKC42tVbAet0OA4\"",
+ "discoveryVersion": "v1",
+ "id": "regattaendpoint:v1",
+ "name": "regattaendpoint",
+ "version": "v1",
+ "description": "This is an API",
+ "ownerDomain": "google.com",
+ "ownerName": "Google",
+ "icons": {
+  "x16": "http://www.google.com/images/icons/product/search-16.gif",
+  "x32": "http://www.google.com/images/icons/product/search-32.gif"
+ },
+ "protocol": "rest",
+ "baseUrl": "https://eregatta.appspot.com/_ah/api/regattaendpoint/v1/",
+ "basePath": "/_ah/api/regattaendpoint/v1/",
+ "rootUrl": "https://eregatta.appspot.com/_ah/api/",
+ "servicePath": "regattaendpoint/v1/",
+ "batchPath": "batch",
+ "parameters": {
+  "alt": {
+   "type": "string",
+   "description": "Data format for the response.",
+   "default": "json",
+   "enum": [
+    "json"
+   ],
+   "enumDescriptions": [
+    "Responses with Content-Type of application/json"
+   ],
+   "location": "query"
+  },
+  "fields": {
+   "type": "string",
+   "description": "Selector specifying which fields to include in a partial response.",
+   "location": "query"
+  },
+  "key": {
+   "type": "string",
+   "description": "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.",
+   "location": "query"
+  },
+  "oauth_token": {
+   "type": "string",
+   "description": "OAuth 2.0 token for the current user.",
+   "location": "query"
+  },
+  "prettyPrint": {
+   "type": "boolean",
+   "description": "Returns response with indentations and line breaks.",
+   "default": "true",
+   "location": "query"
+  },
+  "quotaUser": {
+   "type": "string",
+   "description": "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.",
+   "location": "query"
+  },
+  "userIp": {
+   "type": "string",
+   "description": "IP address of the site where the request originates. Use this if you want to enforce per-user limits.",
+   "location": "query"
+  }
+ },
+ "schemas": {
+  "Regatta": {
+   "id": "Regatta",
+   "type": "object",
+   "properties": {
+    "country": {
+     "type": "string"
+    },
+    "email": {
+     "type": "string"
+    },
+    "endDate": {
+     "type": "string"
+    },
+    "entryAddress": {
+     "type": "string"
+    },
+    "entryName": {
+     "type": "string"
+    },
+    "fax": {
+     "type": "string"
+    },
+    "id": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "latitude": {
+     "type": "number",
+     "format": "float"
+    },
+    "longitude": {
+     "type": "number",
+     "format": "float"
+    },
+    "name": {
+     "type": "string"
+    },
+    "startDate": {
+     "type": "string"
+    },
+    "telephone": {
+     "type": "string"
+    },
+    "venue": {
+     "type": "string"
+    },
+    "website": {
+     "type": "string"
+    }
+   }
+  },
+  "RegattaCollection": {
+   "id": "RegattaCollection",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Regatta"
+     }
+    }
+   }
+  }
+ },
+ "methods": {
+  "getRegatta": {
+   "id": "regattaendpoint.getRegatta",
+   "path": "regatta/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Regatta"
+   }
+  },
+  "insertRegatta": {
+   "id": "regattaendpoint.insertRegatta",
+   "path": "regatta",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Regatta"
+   },
+   "response": {
+    "$ref": "Regatta"
+   }
+  },
+  "removeRegatta": {
+   "id": "regattaendpoint.removeRegatta",
+   "path": "regatta/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Regatta"
+   }
+  },
+  "updateRegatta": {
+   "id": "regattaendpoint.updateRegatta",
+   "path": "regatta",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Regatta"
+   },
+   "response": {
+    "$ref": "Regatta"
+   }
+  }
+ },
+ "resources": {
+  "regattaEndpoint": {
+   "methods": {
+    "downloadRegattas": {
+     "id": "regattaendpoint.regattaEndpoint.downloadRegattas",
+     "path": "downloadRegattas",
+     "httpMethod": "GET",
+     "response": {
+      "$ref": "RegattaCollection"
+     }
+    }
+   }
+  }
+ }
+}
